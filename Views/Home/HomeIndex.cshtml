@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "HomeIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>HomeIndex</h2>
+
+<html>
+<body>
+    <div>
+        <h2>Home Controller</h2>
+        <h2>@DateTime.Now</h2>
+        <p>
+            TempData=@TempData["FortheFullRequest"];
+            <br />
+            Session=@Session["Session1"];
+            <br />
+            ViewData=@ViewData["MyData"];
+            <br />
+            ViewBag=@ViewBag.MyBag
+        </p>
+    </div>
+</body>
+</html>
